@@ -8,7 +8,6 @@ import sqldb from '../sqldb';
 var Thing = sqldb.Thing;
 var User = sqldb.User;
 var Events = sqldb.Events;
-
 Thing.sync()
   .then(() => {
     return Thing.destroy({ where: {} });
@@ -74,7 +73,7 @@ User.sync()
               { "title": "Lunch", "className": "green","start":null,"end":null, },
               { "title": "Birthday Party", "className": "red","start":null,"end":null, },
               { "title": "Smartadmin Open Day", "className": "indigo","start":null,"end":null, }]);
-              console.log('finished populating users',);
+              console.log('finished populating users');
           });
 
       

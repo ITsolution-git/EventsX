@@ -12,7 +12,7 @@ var onHeroku = !!process.env.DYNO;
 
 var db = {
 	Sequelize,
-	sequelize: new Sequelize(config.mysql.uri, config.mysql.options)
+	sequelize: new Sequelize(config.mysql.uri,'root', 'root',config.mysql.options)
 };
 
 
